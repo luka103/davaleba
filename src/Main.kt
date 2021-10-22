@@ -58,14 +58,15 @@
 //
 //
 //    }
-
-
+//
+//
 //Point კლასის შექმნის დავალება
+//import kotlin.math.pow
 //fun main() {
 //
-//    var c1 = Point(3, 4)
+//    var c1 = Point(3.0, 4.0)
 //
-//    var c2 = Point(-3, 5)
+//    var c2 = Point(-3.0, 5.0)
 //
 //
 //    println(c1)
@@ -74,21 +75,27 @@
 //    println(c1.equals(c2))
 //    println(c1.calculateSymmetry())
 //    println(c2.calculateSymmetry())
+//    println(c1.calculateDistance(c2))
 //
 //
 //
 //}
 //
 //
-//class Point(private val x: Int, private val y: Int) {
+//class Point(private val x: Double, private val y: Double) {
 //
-//    private var coordinate1stP: Int = x
-//    private var coordinate2ndP: Int = y
+//    private var coordinate1stP: Double = x
+//    private var coordinate2ndP: Double = y
 //
-//    fun calculateSymmetry(): Pair<Int, Int> {
+//    fun calculateSymmetry(): Pair<Double, Double> {
 //        return Pair(coordinate1stP * -1, coordinate2ndP * -1)
 //
 //    }
+//
+//    fun calculateDistance(other:Point) : Double {
+//        return kotlin.math.sqrt((x - other.x).pow(2) + (y - other.y).pow(2))
+//    }
+//
 //
 //
 //
